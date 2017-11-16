@@ -1,14 +1,11 @@
 let FnTa = [];
 for (let b = 1; b <= 10; b++) {
-    const x = Number(prompt('Введіть значення:' + b + '\n(Якщо десяткове число то через КРАПКУ!)'));
+    const x = Number(prompt('Номер варіанту 15-30\n'+'Введіть значення:' + b + '\n(Якщо десяткове число то через КРАПКУ!)'));
     FnTa.push(x);
 }
 let wk = 2 * Math.PI;
 let N = 1;
-let A = 0,
-    j = 0,
-    B = 0;
-//let n;
+let A = 0, j = 0, B = 0;
 function truhinometriaA(N) {
     for (let i = 0; i <= 9; i++) {
 
@@ -17,7 +14,6 @@ function truhinometriaA(N) {
     }
     return A;
 }
-
 function truhinometriaB(N) {
     for (let i = 0; i <= 9; i++) {
 
@@ -26,11 +22,9 @@ function truhinometriaB(N) {
     }
     return B;
 }
-
 function rez() {
     return Math.sqrt(Math.pow(A, 2) + Math.pow(B, 2));
 }
-
 for (N = 1; N <= 9; N++) {
     document.write(N + '<br>');
     document.write('A=' + truhinometriaA(N) + '<br>');
