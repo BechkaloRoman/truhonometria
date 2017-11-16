@@ -3,7 +3,7 @@ for (let b = 1; b <= 10; b++) {
     const x = Number(prompt('Номер варіанту 1-14\n'+'Введіть значення:' + b + '\n(Якщо десяткове число то через КРАПКУ!)'));
     FnTa.push(x);
 }
-let wk = 2 * Math.PI;
+let wk = Math.PI/2;
 let N = 1;
 let A = 0, j = 0, B = 0;
 function truhinometriaA(N) {
